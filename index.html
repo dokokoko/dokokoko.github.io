@@ -20,9 +20,10 @@
     <h1>Hello World!</h1>
     <p>key1 : <span id="txt-key1">xxx</span></p>
     <p>key2 : <span id="txt-key2">xxx</span></p>
+    <input type="text" id="customerId" value="" />
+    <input type="text" id="customerEmail" value="" />
 
-    <a href="thanks.html">Checkout</a>
-
+    <button id="btn-checkout">Checkout</button>
     <noscript>
       <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-K9DD22KH"
@@ -31,5 +32,20 @@
         style="display: none; visibility: hidden"
       ></iframe>
     </noscript>
+
+    <script>
+      const customerId = document.getElementById("customerId");
+      const customerEmail = document.getElementById("customerEmail");
+
+      const btnCheckout = document.getElementById("btn-checkout");
+      btnCheckout.addEventListener("click", (e) => {
+        dataLayer.push({
+          customerId: customerId.value,
+          customerEmail: customerEmail.value,
+        });
+        console.log("test");
+        console.log(customerId.value);
+      });
+    </script>
   </body>
 </html>
