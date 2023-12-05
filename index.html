@@ -1,77 +1,7 @@
 <html>
-  <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NB897NB");
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
-
+  <head> </head>
   <body>
     <h1>Hello World!</h1>
-    <p>key1 : <span id="txt-key1">xxx</span></p>
-    <p>key2 : <span id="txt-key2">xxx</span></p>
-
-    <script>
-      const queryString = window.location.search;
-
-      const urlParams = new URLSearchParams(queryString);
-      const qKey1 = urlParams.get("key1");
-      const qKey2 = urlParams.get("key2");
-
-      const textKey1 = document.getElementById("txt-key1");
-      const textKey2 = document.getElementById("txt-key2");
-
-      textKey1.innerText = qKey1;
-      textKey2.innerText = qKey2;
-    </script>
-
-    <!-- Embedded Script from Impact -->
-    <script type="text/javascript">
-      (function (a, b, c, d, e, f, g) {
-        e["ire_o"] = c;
-        e[c] =
-          e[c] ||
-          function () {
-            (e[c].a = e[c].a || []).push(arguments);
-          };
-        f = d.createElement(b);
-        g = d.getElementsByTagName(b)[0];
-        f.async = 1;
-        f.src = a;
-        g.parentNode.insertBefore(f, g);
-      })(
-        "https://utt.impactcdn.com/A2788006-de3d-4011-a57c-c4737e79de0365535.js",
-        "script",
-        "ire",
-        document,
-        window
-      );
-      console.log(qKey1);
-      console.log(qKey2);
-      ire("identify", {
-        customerid: qKey1 /*INSERT key1*/,
-        customeremail: qKey2 /*INSERT key2*/,
-      });
-    </script>
-    <!-- // End Embedded Script from Impact -->
-
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NB897NB"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe>
-    </noscript>
+    <a href="thanks.html">Beli Barang ini</a>
   </body>
 </html>
