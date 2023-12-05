@@ -24,14 +24,6 @@
     <input type="text" id="customerEmail" value="" />
 
     <button id="btn-checkout">Checkout</button>
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-K9DD22KH"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe>
-    </noscript>
 
     <script>
       const customerId = document.getElementById("customerId");
@@ -43,7 +35,7 @@
           customerId: customerId.value,
           customerEmail: customerEmail.value,
         });
-        console.log("test");
+        window.location.href = "thanks.html";
         console.log(customerId.value);
       });
     </script>
