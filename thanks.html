@@ -2,12 +2,32 @@
   <head>
     <!-- Google Tag Manager -->
     <script>
-      console.log('pushing customer...');
       window.dataLayer = window.dataLayer || [];
-      dataLayer.push({
+
+      const payload = {
         customerId: 'testing id nih',
         customerEmail: 'testing customer',
-      });
+        OrderPromoCode: 'order-promo-code',
+        products: [
+          {
+            category: 'category 1',
+            quantity: 1,
+            sku: 'sku-1',
+            price: 1000,
+            name: 'product name 1',
+          },
+          {
+            category: 'category 2',
+            quantity: 2,
+            sku: 'sku-2',
+            price: 2000,
+            name: 'product name 2',
+          },
+        ],
+      };
+      console.log('pushing payload...');
+      console.log(payload);
+      dataLayer.push(payload);
 
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
