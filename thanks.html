@@ -2,6 +2,13 @@
   <head>
     <!-- Google Tag Manager -->
     <script>
+      console.log('pushing customer...');
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        customerId: 'testing id nih',
+        customerEmail: 'testing customer',
+      });
+
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -19,14 +26,6 @@
   <body>
     <h1>Barang berhasil dibeli</h1>
 
-    <script>
-      console.log('pushing customer...');
-      window.dataLayer = window.dataLayer || [];
-      dataLayer.push({
-        customerId: 'testing id nih',
-        customerEmail: 'testing customer',
-      });
-    </script>
     <noscript>
       <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-K9DD22KH"
